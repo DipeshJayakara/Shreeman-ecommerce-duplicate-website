@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indowestern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="practice.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+    <body class="showcart">
+        <main>
+                <header>
+                   
+                    <script src="js/cart.js"></script>
+                    <div class="nav container">
+                        <!--logo-->
+                        <a href="#" class="logo">Shreeman-Ecommerce</a>
+                        <div class="nav_1">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="contact.html" id="logout">CONTACT</a></li>
+                                <li id="login-button"><a href="http://localhost:3000/">ACCOUNT</a></li>
+                            </ul>
+                        </div>
+                        <!--cart icon-->
+                        <i class='bx bxs-cart' id="cart-icon" data-quantity="0"></i>
+                        <!--cart-->
+                        <div class="cart">
+                            <h2 class="cart-title">Your cart</h2>
+                            <!--content-->
+                            <div class="cart-content">
+                                
+                            </div>
+                            <!--total-->
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">$0</div>
+                            </div>
+                            <!--buy button-->
+                            <button type="button" class="btn-buy">Pay Now</button>
+                            <!--close cart-->
+                            <i class='bx bx-x' id="close-cart"></i>
+                        </div>
+                    </div>
+            </header> 
+            
+            <section>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://shreeman.in/cdn/shop/files/Q78.png?v=1698133336&width=1400" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Where Love Meets Culture</h5>
+                          <h1>BRIDAL ELEGANCE</h1>
+                          <button type="button" class="btn btn-outline-light">View Collection</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://shreeman.in/cdn/shop/files/Artboard_1_06edebbb-33db-4517-9b71-045f2aa3f8b8.jpg?v=1671272106&width=1400" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
+            
+            <section class="shop container">
+                <h2 class="section-title">Shop Products</h2>
+                <!--shop contents-->
+                <div class="shop-content">
+                    <!--box 1-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-5LGSzi8WIT0/ZavkzSsE-cI/AAAAAAAAACI/ziAoTXFzwlYevxcR3Iv10HrVnx0ncOKAwCNcBGAsYHQ/h120/container1.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL1</h2>
+                        <span class="price">$50</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 2-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-BSn3hKxfHBg/Zavk0SuiSoI/AAAAAAAAACU/Nc_lsXfJrL8ChXcRssHYmNmya7DmczvngCNcBGAsYHQ/h120/container2.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL2</h2>
+                        <span class="price">$89</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 3-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-ZA1JKyP7-S0/Zavk0zNT9LI/AAAAAAAAACY/MKuUz27ZkkM7yFlzCVSIMUrJWfQQwZHagCNcBGAsYHQ/h120/container3.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL3</h2>
+                        <span class="price">$59</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 4-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-TKYNFMU17l4/Zavk1P4x4CI/AAAAAAAAACc/6Mj3rcJdcTEPHKxMSaVLdYTWKiRFUl9tACNcBGAsYHQ/h120/container4.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                        <span class="price">$75.8</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 5-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-V2IQvqQQlIY/Zavk1RsJ-qI/AAAAAAAAACg/stRme-F5FKY8oYe8ubUJWuJ2iHdhDJLCgCNcBGAsYHQ/h120/container5.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL5</h2>
+                        <span class="price">$40.90</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 6-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-kHzIE3s1d0g/Zavk2vzbPXI/AAAAAAAAACk/ST8axIuuRD8EX8G6TO0aQAQswKrf0Z5tgCNcBGAsYHQ/h120/container6.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL6</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 7-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-16FZFTx0T-s/Zavk3ZFglDI/AAAAAAAAACo/zG-2RFJ5jlMcasHEd0IkZcd0OHKiTWZIwCNcBGAsYHQ/h120/container7.jpg" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL7</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 8-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://lh3.googleusercontent.com/-Bw-SkM1fbcs/Zavk3rPocfI/AAAAAAAAACw/8ZT4ylPF4OwiV0ahT_cVRLCodlLQEa_0gCNcBGAsYHQ/h120/container9.webp" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL8</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shop container">
+                <span style="text-align: center;">
+                    <h6>TOP SELLING COLLECTIONS</h6>
+                    <h4 style="font-weight: 600;">SHOP BY CATEGORY</h4>
+                </span>
+                
+                
+                <div class="container mt-5">
+                <!-- Grid layout with four columns -->
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <div class="zoom-container">
+                                <a href="#"><img src="https://shreeman.in/cdn/shop/files/sherwani.png?v=1671604113&width=400" class="zoom-image" data-toggle="modal" data-target="#zoomModal1"></a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="zoom-container">
+                                <a href="#"><img src="https://shreeman.in/cdn/shop/files/indowestern.png?v=1671604112&width=1000" class="zoom-image" data-toggle="modal" data-target="#zoomModal2"></a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="zoom-container">
+                                <a href="#"><img src="https://shreeman.in/cdn/shop/files/kurta_sets.png?v=1671604112&width=1000" class="zoom-image" data-toggle="modal" data-target="#zoomModal3"></a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="zoom-container">
+                                <a href="#"><img src="https://shreeman.in/cdn/shop/files/Edgy.jpg?v=1673005799&width=1400" class="zoom-image" data-toggle="modal" data-target="#zoomModal4"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Modals for each image -->
+                <!-- Modal 1 -->
+                <div class="modal fade" id="zoomModal1" tabindex="-1" role="dialog" aria-labelledby="zoomModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <img src="https://shreeman.in/cdn/shop/files/sherwani.png?v=1671604113&width=400" class="img-fluid" alt="Zoomed Image 1">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 2 -->
+                <div class="modal fade" id="zoomModal2" tabindex="-1" role="dialog" aria-labelledby="zoomModalLabel2" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <img src="https://shreeman.in/cdn/shop/files/indowestern.png?v=1671604112&width=1000" class="img-fluid" alt="Zoomed Image 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 3 -->
+                <div class="modal fade" id="zoomModal3" tabindex="-1" role="dialog" aria-labelledby="zoomModalLabel3" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <img src="https://shreeman.in/cdn/shop/files/kurta_sets.png?v=1671604112&width=1000" class="img-fluid" alt="Zoomed Image 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal 4 -->
+                <div class="modal fade" id="zoomModal4" tabindex="-1" role="dialog" aria-labelledby="zoomModalLabel4" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <img src="https://shreeman.in/cdn/shop/files/Edgy.jpg?v=1673005799&width=1400" class="img-fluid" alt="Zoomed Image 4">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </section>
+
+            <section class="offer-section">
+                <div class="container">
+                    <h2>Festive Offer!</h2>
+                    <p>Grab our special deals before they expire.</p>
+                    
+                    <!-- Timer -->
+                    <div class="offer-timer" id="timer"></div>
+                </div>
+                <script>
+                    // Set the date we're counting down to (adjust the date and time accordingly)
+                    var countDownDate = new Date("Jan 1, 2025 00:00:00").getTime();
+                
+                    // Update the countdown every 1 second
+                    var x = setInterval(function() {
+                        // Get the current date and time
+                        var now = new Date().getTime();
+                
+                        // Calculate the remaining time
+                        var distance = countDownDate - now;
+                
+                        // Calculate days, hours, minutes, and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                        // Display the countdown in the "timer" div
+                        document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                
+                        // If the countdown is over, display a message
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("timer").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
+            </section>
+
+            <section class="gender_dress">
+                <span style="text-align: center;">
+                    <h6>WOMEN'S WEAR COLLECTION</h6>
+                    <h4 style="font-weight: 600;">ETHNIC WEAR FOR WOMEN</h4>
+                </span>
+                <img src="https://shreeman.in/cdn/shop/files/Womens_-_desktop_copy_2.jpg?v=1699271032&width=1400" alt="">
+            </section>
+            <section class="shop container">
+                <span style="text-align: center;">
+                    <h6>TOP SELLING COLLECTIONS</h6>
+                    <h4 style="font-weight: 600;">SHOP BY CATEGORY</h4>
+                </span>
+                <!--shop contents-->
+                <div class="shop-content">
+                    <!--box 1-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/Image7261E.jpg?v=1684157665&width=300" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL9</h2>
+                        <span class="price">$50</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 2-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/Image7426E.jpg?v=1684157582&width=300" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL10</h2>
+                        <span class="price">$89</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 3-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/products/JAY_9716.jpg?v=1632466270&width=500" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL11</h2>
+                        <span class="price">$59</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 4-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/products/Shreeman0582_1.jpg?v=1682059668&width=300" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL12</h2>
+                        <span class="price">$75.8</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 5-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/products/Shreeman0881E.jpg?v=1682061103&width=300" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL13</h2>
+                        <span class="price">$40.90</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 6-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/products/image0051E.jpg?v=1681992517&width=500" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL14</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 7-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/products/image0090E.jpg?v=1681993581&width=500" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL15</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 8-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/products/DSC08866EditedLast.jpg?v=1660820272&width=500" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL16</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="gender_dress">
+                <span style="text-align: center;">
+                    <h6>MEN'S WEAR COLLECTION</h6>
+                    <h4 style="font-weight: 600;">ETHNIC WEAR FOR MEN</h4>
+                </span>
+                <div class="carousel-item active">
+                    <img style="cursor: pointer;" src="https://shreeman.in/cdn/shop/files/mens_-_desktop_copy_2.jpg?v=1699271099&width=1400" class="d-block w-100" alt="...">
+                  </div>
+            </section>
+            <section class="shop container">
+                <span style="text-align: center;">
+                    <h6>MEN'S COLLECTIVE</h6>
+                    <h4 style="font-weight: 600;">INDO WESTERN</h4>
+                </span>
+                <!--shop contents-->
+                <div class="shop-content">
+                    <!--box 1-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2512-5365.jpg?v=1703328729&width=400" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL17</h2>
+                        <span class="price">$50</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 2-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2512-4960.jpg?v=1703339081&width=400" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL18</h2>
+                        <span class="price">$89</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 3-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2512-4603.jpg?v=1703337471&width=400" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL19</h2>
+                        <span class="price">$59</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 4-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2512-4668.jpg?v=1703332546&width=400" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL20</h2>
+                        <span class="price">$75.8</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 5-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2512-5206.jpg?v=1703329234&width=400" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL21</h2>
+                        <span class="price">$40.90</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 6-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2512-4889.jpg?v=1703326054&width=400" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL22</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 7-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2613-6088.jpg?v=1702649184&width=500" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL23</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                    <!--box 8-->
+                    <div class="product-box">
+                        <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                        <img 
+                            src="https://shreeman.in/cdn/shop/files/2613-MONZARA_04-09-23_5735.jpg?v=1702646432&width=500" 
+                            alt="" 
+                            class="product-img"
+                        />
+                        <h2 class="product-title">ADICOLOR SEASONAL24</h2>
+                        <span class="price">$35.98</span>
+                        <i class='bx bxs-shopping-bag add-cart'></i>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6YXiRSgS8JrXPMs9JPHJZt4Ct4dokePUbX48" crossorigin="anonymous"></script>
+
+            <script src="script_zoom.js"></script>
+            <script src="js/main.js"></script>
+            
+        </main>
+
+
+        <footer> 
+            <div class="main_footer_intro">
+                    <div class="about_us">
+                        <p><b>Shreeman, Exquisite Indo Western for Men, You Love</b></p>
+                        <br>
+                        <p>Indo Western for men is hard to come by. Most stores sell the same old prints and styles. However, the fashion industry has involved and become more inclusive of men's fashion. You can ditch the boring styles and opt for trendy <b>Indo Western attires for men</b>.</p>
+                        <br>
+                        <p>Wondering where to find them? Your search ends at Shreeman. We curate the best collection of Indo Western Dress for men and Indo western kurta for men. Our talented team of experts carefully selects the highest quality fabrics, designs the most exquisite Indo Western kurtas for men, and offers an array of colour options for you to choose from us.</p>
+                        <br>
+                        <p>Ethereal prints, intricate embroidery, and unique styles make Shreeman the best place for <span class="coloring">Indo Western for men</span> Whether you are searching for attire for Sangeet, Mehendi, Haldi, reception, or are looking for something exclusive for your wedding, we offer the best collection of Indo Western dress for men. Make a statement in our collection and become the showstopper of any occasion that you attend. Bold and stunning, our collection of Indo Western kurtas for men will leave you bedazzled!</p>
+                        <br>
+                        <p><b>Wedding Indo Western Dress: Be Traditional On Your Wedding Day!</b></p>  
+                        <br>
+                        <p>Gone are the days when men wanted to wear banal, traditional attires at their wedding. Even guests look for unique attires that will make them stand out. <b>Wedding Indo Western</b> for men is the perfect way to blend traditions and modern style. Indian new wear looks elegant, western wear looks stylish. But when they are combined together, it looks charismatic.</p>
+                        <br>
+                        <p>Searching for the perfect Indo Western for a wedding? Shreeman is your answer. Our wide range of Wedding <b>Indo Western for groom </b>gives you a plethora of options to choose from. Designed with the intention of delivering trendy and classic <span class="coloring">Ethnic Wear for men</span>, our collection is the perfect blend of modern styles and cultural and traditional patterns.</p>
+                        <br>
+                        <p>At Shreeman, we offer Indo Western dresses for men in various fabrics. You can choose from Banarasi silk, brocade, jacquard, lucknowi, velvet, etc. Each design is unique and exquisite. The intricate work on the fabric further enhances the look of the attire. <b>Wedding Indo Western</b> can be found in many colours at Shreeman. You don't have to stick to the basics. Explore beautiful colours like pink, green, gold, purple, etc. If you want the traditional colours, we also have a wide collection of Indo-Western Ethnic wear in sophisticated reds, greens, blacks, and blues.</p>
+                        <br>
+                        <p><b>Shop Indo Western Dress: Sherwani, Outfits for Groom Online</b></p>
+                    </div>
+                    <button type="button" class="btn btn-light"><a href="read more.html" >Read More</a></button>
+            </div>
+            <div class="content">
+                <div class="content1">
+                    <p>ABOUT US</p>
+                    <br>
+                    <p>We, Shreeman are a 40+ Years old Heritage Premium Indian Ethnic Wear Brand. Our quality of craftmanship and our services has been the back-bone of our hierloom towards the Brand Patron.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="content1">
+                    <ul>
+                        <li>POLICIES</li>
+                        <br>
+                        <li>Privacy Policy</li>
+                        <li>Payment Policy</li>
+                        <li>Shipping Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Refund policy</li>
+                        <li>Shreeman Blogs</li>
+                    </ul>
+                </div>
+                <div class="content1">
+                    <p>NEWSLETTER</p>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <input type="email" placeholder="Enter your email address" style="height: 30px; width: 190px; border-radius: 5px;">
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-dark" aria-required="true">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; Shreeman.<br> All rights reserved by Shreeman.
+            </div>   
+        </footer>
+        
+    </body>
+</html>

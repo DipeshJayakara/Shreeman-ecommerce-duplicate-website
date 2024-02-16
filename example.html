@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+</head>
+<body>
+  <h2>User Registration</h2>
+  <form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <button type="button" onclick="registerUser()">Register</button>
+  </form>
+
+  <script>
+    function registerUser() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (!username || !password) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      // Send data to the server using fetch
+      fetch('/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: username, password: password }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        alert('User registered successfully!');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('Error registering user.');
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+@RestController
+@RequestMapping("/api")
+public class UserController {
+
+    @PostMapping("/register")
+    public String registerUser(@RequestBody User user) {
+        // Assuming User is a simple POJO with fields for username and password
+        // Perform database operations to store user information (e.g., using JPA or JDBC)
+
+        // For simplicity, let's just print the received data
+        System.out.println("Received user registration request: " + user.getUsername() + ", " + user.getPassword());
+
+        // Save user information to a text file in a new folder
+        saveUserToFile(user);
+
+        // Return a success message
+        return "User registered successfully";
+    }
+
+    private void saveUserToFile(User user) {
+        // Create a new folder for user accounts if it doesn't exist
+        String folderPath = "user_accounts";
+        String filePath = folderPath + "/" + user.getUsername() + ".txt";
+
+        try {
+            // Create the folder if it doesn't exist
+            new File(folderPath).mkdir();
+
+            // Write user information to a text file
+            FileWriter writer = new FileWriter(filePath);
+            writer.write("Username: " + user.getUsername() + "\n");
+            writer.write("Password: " + user.getPassword() + "\n");
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indowestern</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/public/style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="practice.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <body class="showcart">
+        <main>
+                <header>
+                    <nav class="nav_2">
+                        <div class="nav-links">
+                            <div class="menu">
+                            <ul>
+                                <li><a href="/">HOME</a></li>
+                                <li><a href="/contact" id="logout">CONTACT</a></li>
+                                <li><a href="http://localhost:3000/">ACCOUNT</a></li>
+                            </ul>
+                            </div>
+                        </div> 
+                    </nav>
+                    <script src="js/cart.js"></script>
+                    <div class="nav container">
+                        <!--logo-->
+                        <a href="#" class="logo">Shreeman-Ecommerce</a>
+                        <!--cart icon-->
+                        <i class='bx bxs-cart' id="cart-icon" data-quantity="0"></i>
+                        <!--cart-->
+                        <div class="cart">
+                            <h2 class="cart-title">Your cart</h2>
+                            <!--content-->
+                            <div class="cart-content">
+                                
+                            </div>
+                            <!--total-->
+                            <div class="total">
+                                <div class="total-title">Total</div>
+                                <div class="total-price">$0</div>
+                            </div>
+                            <!--buy button-->
+                            <button type="button" class="btn-buy">Pay Now</button>
+                            <!--close cart-->
+                            <i class='bx bx-x' id="close-cart"></i>
+                        </div>
+                    </div>
+            </header> 
+
+            <article>
+                <section class="shop container">
+                    <h2 class="section-title">Shop Products</h2>
+                    <!--shop contents-->
+                    <div class="shop-content">
+                        <!--box 1-->
+                        <div class="product-box">
+                            <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                            <img 
+                                src="https://lh3.googleusercontent.com/-uNMW_shvvls/ZaItiI50xII/AAAAAAAAAAM/UgQpG3CVx3cZcCDALGkmC0VSaDlULioJQCNcBGAsYHQ/h120/product1.jpeg" 
+                                alt="" 
+                                class="product-img"
+                            />
+                            <h2 class="product-title">ADICOLOR SEASONAL1</h2>
+                            <span class="price">$50</span>
+                            <i class='bx bxs-shopping-bag add-cart'></i>
+                        </div>
+                        <!--box 2-->
+                        <div class="product-box">
+                            <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                            <img 
+                                src="https://lh3.googleusercontent.com/-nRRcWgWjO2o/ZaItiPiB5_I/AAAAAAAAAAQ/7vo9qAHkBfkx-nG-pm6yPahKI3wwkKjfgCNcBGAsYHQ/h120/product2.jpeg" 
+                                alt="" 
+                                class="product-img"
+                            />
+                            <h2 class="product-title">ADICOLOR SEASONAL2</h2>
+                            <span class="price">$89</span>
+                            <i class='bx bxs-shopping-bag add-cart'></i>
+                        </div>
+                        <!--box 3-->
+                        <div class="product-box">
+                            <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                            <img 
+                                src="https://lh3.googleusercontent.com/-9lQNsGz5Ajs/ZaItie_VXVI/AAAAAAAAAAU/K_-bLVJ4RF8rptWODBdkBTinfX_wXGSQQCNcBGAsYHQ/h120/product3.jpeg" 
+                                alt="" 
+                                class="product-img"
+                            />
+                            <h2 class="product-title">ADICOLOR SEASONAL3</h2>
+                            <span class="price">$59</span>
+                            <i class='bx bxs-shopping-bag add-cart'></i>
+                        </div>
+                        <!--box 4-->
+                        <div class="product-box">
+                            <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                            <img 
+                                src="https://lh3.googleusercontent.com/-oUiXtvk7xx8/ZaI2P0mEP6I/AAAAAAAAAB4/bFyeYNEWGQ8qkSf5dxBKhKToQdZzuuw9QCNcBGAsYHQ/h120/product5.jpeg" 
+                                alt="" 
+                                class="product-img"
+                            />
+                            <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                            <span class="price">$75.8</span>
+                            <i class='bx bxs-shopping-bag add-cart'></i>
+                        </div>
+                        <!--box 5-->
+                        <div class="product-box">
+                            <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                            <img 
+                                src="https://lh3.googleusercontent.com/--KzE3ELiAVk/ZaItkAFu_RI/AAAAAAAAAAg/bpEaPqaDo0M65sY9RM2L-tkjIc_zJBFnwCNcBGAsYHQ/h120/product6.jpeg" 
+                                alt="" 
+                                class="product-img"
+                            />
+                            <h2 class="product-title">ADICOLOR SEASONAL5</h2>
+                            <span class="price">$40.90</span>
+                            <i class='bx bxs-shopping-bag add-cart'></i>
+                        </div>
+                        <!--box 6-->
+                        <div class="product-box">
+                            <!--stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online-->
+                            <img 
+                                src="https://lh3.googleusercontent.com/-APk6BlRBlg8/ZaItkOhKW2I/AAAAAAAAAAk/axfi-HTMp8s0ClSPi-d3jHOKbPAWatF5wCNcBGAsYHQ/h120/product7.jpeg" 
+                                alt="" 
+                                class="product-img"
+                            />
+                            <h2 class="product-title">ADICOLOR SEASONAL6</h2>
+                            <span class="price">$35.98</span>
+                            <i class='bx bxs-shopping-bag add-cart'></i>
+                        </div>
+                    </div>
+            </article>
+            <script src="js/main.js"></script>
+            
+              
+        
+            <footer> 
+                <div class="main_footer_intro">
+                        <div class="about_us">
+                            <p><b>Shreeman, Exquisite Indo Western for Men, You Love</b></p>
+                            <br>
+                            <p>Indo Western for men is hard to come by. Most stores sell the same old prints and styles. However, the fashion industry has involved and become more inclusive of men's fashion. You can ditch the boring styles and opt for trendy <b>Indo Western attires for men</b>.</p>
+                            <br>
+                            <p>Wondering where to find them? Your search ends at Shreeman. We curate the best collection of Indo Western Dress for men and Indo western kurta for men. Our talented team of experts carefully selects the highest quality fabrics, designs the most exquisite Indo Western kurtas for men, and offers an array of colour options for you to choose from us.</p>
+                            <br>
+                            <p>Ethereal prints, intricate embroidery, and unique styles make Shreeman the best place for <span class="coloring">Indo Western for men</span> Whether you are searching for attire for Sangeet, Mehendi, Haldi, reception, or are looking for something exclusive for your wedding, we offer the best collection of Indo Western dress for men. Make a statement in our collection and become the showstopper of any occasion that you attend. Bold and stunning, our collection of Indo Western kurtas for men will leave you bedazzled!</p>
+                            <br>
+                            <p><b>Wedding Indo Western Dress: Be Traditional On Your Wedding Day!</b></p>  
+                            <br>
+                            <p>Gone are the days when men wanted to wear banal, traditional attires at their wedding. Even guests look for unique attires that will make them stand out. <b>Wedding Indo Western</b> for men is the perfect way to blend traditions and modern style. Indian new wear looks elegant, western wear looks stylish. But when they are combined together, it looks charismatic.</p>
+                            <br>
+                            <p>Searching for the perfect Indo Western for a wedding? Shreeman is your answer. Our wide range of Wedding <b>Indo Western for groom </b>gives you a plethora of options to choose from. Designed with the intention of delivering trendy and classic <span class="coloring">Ethnic Wear for men</span>, our collection is the perfect blend of modern styles and cultural and traditional patterns.</p>
+                            <br>
+                            <p>At Shreeman, we offer Indo Western dresses for men in various fabrics. You can choose from Banarasi silk, brocade, jacquard, lucknowi, velvet, etc. Each design is unique and exquisite. The intricate work on the fabric further enhances the look of the attire. <b>Wedding Indo Western</b> can be found in many colours at Shreeman. You don't have to stick to the basics. Explore beautiful colours like pink, green, gold, purple, etc. If you want the traditional colours, we also have a wide collection of Indo-Western Ethnic wear in sophisticated reds, greens, blacks, and blues.</p>
+                            <br>
+                            <p><b>Shop Indo Western Dress: Sherwani, Outfits for Groom Online</b></p>
+                        </div>
+                        <button class="about_us" style="height: 50px; width: 130px;"><a href="/read more" >Read More</a></button>
+                </div>
+                <div class="content">
+                    <div class="content1">
+                        <p>ABOUT US</p>
+                        <br>
+                        <p>We, Shreeman are a 40+ Years old Heritage Premium Indian Ethnic Wear Brand. Our quality of craftmanship and our services has been the back-bone of our hierloom towards the Brand Patron.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="content1">
+                        <ul>
+                            <li>POLICIES</li>
+                            <br>
+                            <li>Privacy Policy</li>
+                            <li>Payment Policy</li>
+                            <li>Shipping Policy</li>
+                            <li>Terms of Service</li>
+                            <li>Refund policy</li>
+                            <li>Shreeman Blogs</li>
+                        </ul>
+                    </div>
+                    <div class="content1">
+                        <p>NEWSLETTER</p>
+                        <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                        <input type="email" placeholder="Enter your email address" style="height: 30px; width: 190px; border-radius: 5px;">
+                        <br>
+                        <br>
+                        <input type="button" value="SUBSCRIBE" style="height: 30px; width: 100px; background-color: black; color: white;" required>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; Shreeman.<br> All rights reserved by Shreeman.
+                </div>   
+            </footer>
+            
+        </main>
+    </body>
+</html>

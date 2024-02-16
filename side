@@ -1,0 +1,81 @@
+ <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/files/Image7261E.jpg?v=1684157665&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL1</h2>
+                                        <span class="price">$50</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+            
+                                <!-- Add more product boxes as needed -->
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/files/Image7426E.jpg?v=1684157582&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL2</h2>
+                                        <span class="price">$89</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-3">
+                                    <!-- Add more product boxes as needed -->
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/files/Image7410E.jpg?v=1684157017&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL3</h2>
+                                        <span class="price">$59</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+            
+                                <!-- Add more product boxes as needed -->
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/files/Image7323E.jpg?v=1684155599&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                                        <span class="price">$75.8</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+
+                                <!-- Add more product boxes as needed -->
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/products/Shreeman1205E.jpg?v=1682067842&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                                        <span class="price">$75.8</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+
+                                <!-- Add more product boxes as needed -->
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/products/Shreeman0954E.jpg?v=1682061712&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                                        <span class="price">$75.8</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+
+                                <!-- Add more product boxes as needed -->
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/products/Shreeman0881E.jpg?v=1682061103&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                                        <span class="price">$75.8</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>
+
+                                <!-- Add more product boxes as needed -->
+                                <div class="col-md-3">
+                                    <div class="product-box">
+                                        <img src="https://shreeman.in/cdn/shop/products/Shreeman0582_1.jpg?v=1682059668&width=300" alt="" class="product-img">
+                                        <h2 class="product-title">ADICOLOR SEASONAL4</h2>
+                                        <span class="price">$75.8</span>
+                                        <i class='bx bxs-shopping-bag add-cart'></i>
+                                    </div>
+                                </div>

@@ -1,0 +1,154 @@
+/*read more*/
+.side_menu_aside{
+    padding-top: 10px;
+    width: 120px;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-gap: 3px;
+}
+.side_menu_aside button{
+    width: 270px;
+    height: 50px;
+}
+.about_us_color{
+    
+    width: 900px;
+    height: 1000px;
+    overflow: scroll;
+    padding: 10px 22.990px;
+    padding-top: 40px;
+}
+
+/*contact*/
+.nav_1_contact{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+.nav_1_contact img{
+    height:50px;
+    width: 300px;
+    padding-left: 540px;
+}
+.nav-links_contact{
+    flex: 1;
+    text-align: center;
+  }
+  .nav-links_contact ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links_contact ul li a{
+    color: rgb(44, 43, 43);
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .nav-links_contact ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+  }
+  .nav-links_contact ul li:hover::after{
+      width:100%;
+  }
+
+.details_contact{
+    text-align: -webkit-center;
+    width: 1335px;
+}
+.contact_article{
+    background-color: rgba(238, 239, 243, 0.925);
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 19px;
+}
+.name_email{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.name_email input{
+    width: 270px;
+    height: 30px;
+    margin-left: 10px;
+}
+.message{
+    padding-top: 90px;
+}
+textarea {
+    width: 60%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+  .message form{
+    padding-left: 390px;
+  }
+  .buttton_contact_submit{
+    width: 569px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.774);
+    box-shadow: rgba(12, 12, 12, 0.774);
+  }
+
+  /*account*/
+  .nav_1_read-more{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+.nav_1_read-more img{
+    height:50px;
+    width: 300px;
+    padding-left: 540px;
+}
+.nav-links_read-more{
+    flex: 1;
+    text-align: center;
+  }
+  .nav-links_read-more ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links_read-more ul li a{
+    color: rgb(44, 43, 43);
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .nav-links_read-more ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+  }
+  .nav-links_read-more ul li:hover::after{
+      width:100%;
+  }
+  .account_article{
+    height: 300px;
+  }
+
+ 
+ .login_input_submit{
+    width: 200px;
+ }
+ #loginForm{
+    place-items: center;
+ }
+ 
